@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "naukri"
+version = "0.1.0"
+description = "Naukri daily update automation script"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pypdf",
+    "reportlab",
+    "selenium",
+]
+
+[project.scripts]
+naukri-update = "main:main"
