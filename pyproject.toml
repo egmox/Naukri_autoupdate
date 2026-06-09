@@ -14,5 +14,8 @@ dependencies = [
     "selenium",
 ]
 
+[tool.vercel]
+entrypoint = "main.py"
+
 [project.scripts]
 naukri-update = "main:main"
